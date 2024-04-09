@@ -19,10 +19,10 @@ public class MapGenerator {
         for(int i = 0; i < map.length; i++){
             for(int j = 0; j < map[0].length; j++){
                 if(map[i][j] > 0) {
-                    g.setColor(Color.white);
+                    g.setColor(Color.blue);
                     g.fillRect(j*brickWidth + 80, i*brickHeight + 50, brickWidth , brickHeight);
 
-                    g.setStroke(new BasicStroke(3));
+                    g.setStroke(new BasicStroke(5));
                     g.setColor(Color.black);
                     g.drawRect(j*brickWidth + 80, i*brickHeight + 50, brickWidth , brickHeight);
                 }
